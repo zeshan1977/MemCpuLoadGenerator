@@ -1,0 +1,57 @@
+2019-03-04 21:26:37
+Full thread dump OpenJDK 64-Bit Server VM (25.191-b12 mixed mode):
+
+"Attach Listener" #11 daemon prio=9 os_prio=0 tid=0x00007f0314001000 nid=0x44e0 waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+"DestroyJavaVM" #10 prio=5 os_prio=0 tid=0x00007f035004b800 nid=0x44bf waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+"Thread: 1" #9 prio=5 os_prio=0 tid=0x00007f0350155800 nid=0x44cb waiting on condition [0x00007f03379f8000]
+   java.lang.Thread.State: RUNNABLE
+	at cpumem.cpuiomembusy$BusyThread.run(cpuiomembusy.java:53)
+
+"Thread: 0" #8 prio=5 os_prio=0 tid=0x00007f0350153800 nid=0x44ca runnable [0x00007f0337af9000]
+   java.lang.Thread.State: RUNNABLE
+	at cpumem.cpuiomembusy$BusyThread.run(cpuiomembusy.java:53)
+
+"Service Thread" #7 daemon prio=9 os_prio=0 tid=0x00007f0350140000 nid=0x44c8 runnable [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+"C1 CompilerThread1" #6 daemon prio=9 os_prio=0 tid=0x00007f035011b000 nid=0x44c7 waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+"C2 CompilerThread0" #5 daemon prio=9 os_prio=0 tid=0x00007f0350118800 nid=0x44c6 waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+"Signal Dispatcher" #4 daemon prio=9 os_prio=0 tid=0x00007f035010b800 nid=0x44c5 runnable [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+"Finalizer" #3 daemon prio=8 os_prio=0 tid=0x00007f03500df800 nid=0x44c4 in Object.wait() [0x00007f033c1af000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x00000000b55bb810> (a java.lang.ref.ReferenceQueue$Lock)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
+	- locked <0x00000000b55bb810> (a java.lang.ref.ReferenceQueue$Lock)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:165)
+	at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:216)
+
+"Reference Handler" #2 daemon prio=10 os_prio=0 tid=0x00007f03500da800 nid=0x44c3 in Object.wait() [0x00007f033c2b0000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x00000000b55bb850> (a java.lang.ref.Reference$Lock)
+	at java.lang.Object.wait(Object.java:502)
+	at java.lang.ref.Reference.tryHandlePending(Reference.java:191)
+	- locked <0x00000000b55bb850> (a java.lang.ref.Reference$Lock)
+	at java.lang.ref.Reference$ReferenceHandler.run(Reference.java:153)
+
+"VM Thread" os_prio=0 tid=0x00007f03500d1000 nid=0x44c2 runnable 
+
+"GC task thread#0 (ParallelGC)" os_prio=0 tid=0x00007f035005e000 nid=0x44c0 runnable 
+
+"GC task thread#1 (ParallelGC)" os_prio=0 tid=0x00007f035005f800 nid=0x44c1 runnable 
+
+"VM Periodic Task Thread" os_prio=0 tid=0x00007f0350142800 nid=0x44c9 waiting on condition 
+
+JNI global references: 5
+
