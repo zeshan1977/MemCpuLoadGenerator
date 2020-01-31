@@ -13,6 +13,7 @@ public class cpuiomembusy
       final long duration = 100000;
       //final long duration = 10;
       for (int thread = 0; thread < numCore * numThreadsPerCore; thread++) {
+          System.out.println("New BusyThread launching : "+thread);
           new BusyThread("Thread: " + thread, load, duration).start();
       }
   
@@ -55,6 +56,7 @@ public class cpuiomembusy
                     byte[] newbyte= new byte[256];
                     vecbytearr.add(newbyte);
                     Runtime rt = Runtime.getRuntime();
+                    System.out.println( " Cause my heart is in Ohio. Hey There ");
                     System.out.println( "free memory: " + rt.freeMemory()/1000+"M");
                     if (System.currentTimeMillis() % 100 == 0) {
                         Thread.sleep((long) Math.floor((1 - load) * 100));
