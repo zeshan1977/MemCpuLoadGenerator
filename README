@@ -1,0 +1,8 @@
+
+First
+pip install pipenv
+pipenv shell
+pipenv install flask psycopg2 sqlalchemy 
+This will create a pipfile with all the dependencies.
+
+installking pgadmin4 (the admin gui for postgres10).userid is foo@bar.com (passwdis hammed00)
